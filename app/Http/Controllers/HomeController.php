@@ -4,15 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class SobreController extends Controller
+class HomeController extends Controller
 {
     /**
      * Handle the incoming request.
      */
     public function __invoke(Request $request)
     {
-        $sobreview = view('sobre');
-
-        return $sobreview ;
+        return view('home');
     }
 }
