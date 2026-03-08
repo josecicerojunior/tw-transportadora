@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('origem');
             $table->string('destino');
             $table->string('codigo_rastreio')->unique();
+            $table->string('status');
             $table->foreignID('remetente_id')->constrained('clientes')->onDelete('cascade');
             $table->foreignID('destinatario_id')->constrained('clientes')->onDelete('cascade');
             $table->timestamps();
